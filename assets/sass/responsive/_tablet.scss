@@ -1,0 +1,26 @@
+/*************** MEDIA QUERIES ***************/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .hero-content-box h1 {
+    font-size: 50px;
+  }
+  .section-title h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Target tablets in landscape mode */
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+// @media screen and (min-device-width: 640px) and (max-device-width: 990px) {
+//   body {
+//     color: yellowgreen !important;
+//   }
+// }
+
+// // Landscape Tablet
+// @media screen and (min-device-width: 640px) and (max-device-width: 990px) and (orientation: landscape) {
+//   body {
+//     color: blue !important;
+//   }
+// }

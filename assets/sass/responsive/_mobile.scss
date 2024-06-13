@@ -1,0 +1,206 @@
+/* Mobile Version CSS  */
+
+@media (max-width: 768px) {
+  //Global
+  section {
+    .tag {
+      font-size: 12px;
+      line-height: unset;
+    }
+  }
+  //Navbar
+  .hero-logo {
+    height: 60px;
+  }
+  .desk-menu {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: flex;
+    height: 100%;
+  }
+  //   Hero Section
+  .hero-section {
+    margin-top: 0;
+    padding-top: 3rem;
+  }
+  .hero-info {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    div {
+      justify-content: center;
+    }
+    .svg-box {
+      width: 300px;
+      .info-text {
+        padding-left: 48px;
+      }
+    }
+  }
+  .hero-comp {
+    height: 600px;
+  }
+  .hero-content-box {
+    height: 100%;
+    .top-logo {
+      width: 85%;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  #heroBtn {
+    font-size: 12px;
+  }
+
+  // Stats
+  #stats-section {
+    clip-path: none;
+    padding-bottom: 4rem;
+    .stats-boxs {
+      border: none;
+      p {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      h3 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  // About Section
+  .about-us {
+    .video-box {
+      aspect-ratio: 16/9;
+      .control {
+        height: 50px;
+        width: 50px;
+        i {
+          font-size: 30px;
+        }
+      }
+      video {
+        aspect-ratio: 16/9;
+      }
+    }
+  }
+
+  // Who Meet
+  .who-meet {
+    clip-path: none;
+    .category {
+      height: 120px;
+    }
+  }
+
+  //Feature
+  .feature {
+    .highlight {
+      h5 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  //Client Testimoial
+  .client-testimonials {
+    clip-path: none;
+  }
+
+  // Speaker
+  .speakers {
+    .mySwiper3 {
+      .swiper-slide {
+        &:nth-child(2n) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  // Gallery Section
+  .view-btn {
+    height: 40px;
+    width: 40px;
+  }
+
+  //Contact
+  .contact-box {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--primary-color);
+    border-right: 0;
+  }
+  //Footer
+  .footer-box {
+    ul {
+      margin-top: 0;
+    }
+    .footer-list-box {
+      margin-top: 0;
+    }
+    .footer-list-box:first-child {
+      margin-top: 15px;
+    }
+  }
+  .footer-credit {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-infos {
+    flex-direction: column;
+  }
+  .footer-credit-logo {
+    display: none !important;
+  }
+  .mobile-footer-credit {
+    display: block !important;
+  }
+
+  // Agenda Page
+  .countdown {
+    span {
+      font-size: 22px;
+    }
+    .timer-box {
+      margin-right: 0 !important;
+      div {
+        font-size: 10px;
+      }
+    }
+  }
+  .agenda-nav {
+    .nav-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  .agenda-content {
+    h5 {
+      padding-left: 0;
+    }
+  }
+  .agenda-title {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-btn a {
+    padding: 12px 19px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "netsqurewfis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile:css": "node-sass --output-style compressed --output assets/css/ assets/sass/main.scss --watch --force"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.19.2",
+    "bootstrap": "5.2.3",
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

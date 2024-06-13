@@ -1,0 +1,28 @@
+.contact-page {
+  .d-flex {
+    i {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+    p {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      a {
+        color: var(--primary-color) !important;
+        text-decoration: underline !important;
+      }
+    }
+    .power-text {
+      font-weight: 600;
+    }
+  }
+}
+.contact-page-info {
+  .contact-box {
+    a {
+      i {
+        color: white !important;
+      }
+    }
+  }
+}

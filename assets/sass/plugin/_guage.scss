@@ -1,0 +1,139 @@
+// Plugins
+.gauge-container {
+  width: 180px;
+  height: 180px;
+  display: block;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &#gauge1 {
+    span.label {
+      font-size: 0.7em;
+    }
+  }
+
+  &#gauge4 {
+    width: 160px;
+    height: 160px;
+    span.label {
+      font-size: 0.7em;
+    }
+  }
+
+  &#gauge2 {
+    width: 220px;
+    height: 220px;
+    span.label {
+      font-size: 1.2em;
+    }
+  }
+
+  &#gauge3 {
+    width: 300px;
+    height: 300px;
+    span.label {
+      font-size: 2em;
+      margin-top: -35px;
+    }
+  }
+
+  span.label {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -10px;
+  }
+}
+.gauge-container > .gauge .dial {
+  stroke: #fff;
+  stroke-width: 15;
+  fill: rgba(0, 0, 0, 0);
+}
+.gauge-container > .gauge .value {
+  stroke: var(--secondary-color);
+  stroke-width: 15;
+  fill: rgba(0, 0, 0, 0);
+}
+.gauge-container > .gauge .value-text {
+  fill: #fff;
+  font-family: var(--bebas-neue);
+  font-weight: bold;
+  font-size: 1em;
+}
+.g-circle {
+  width: 180px;
+  height: 180px;
+  display: block;
+  float: left;
+  padding: 10px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    width: 60%;
+    height: 60%;
+    background-color: var(--bg-fade);
+    border-radius: 50%;
+    position: absolute;
+    /* Make it center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    z-index: -1;
+  }
+}
+
+.g-circle > .gauge > .dial {
+  stroke: transparent;
+  stroke-width: 2;
+}
+.g-circle > .gauge > .value {
+  stroke: var(--primary-color);
+  stroke-width: 2;
+}
+.g-circle {
+  position: relative;
+}
+.g-circle .value-text {
+  fill: #fff !important;
+  font-size: 0.8rem !important;
+  font-weight: bold !important;
+  font-family: var(--sf-pro-regular) !important;
+  background-color: var(--primary-color);
+}
+
+.g-circle {
+  &-wrapper {
+    margin-bottom: 5rem;
+  }
+  &-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-label {
+    font-family: var(--guage-font);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.gauge-border {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
