@@ -1,0 +1,43 @@
+.section {
+  background-color: black;
+}
+.speakers-section {
+  text-align: center;
+  background-image: url("dummy_background_url.jpg");
+  padding: 50px;
+}
+.speakers-title {
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: darkgoldenrod;
+}
+.speaker-profiles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.speaker-profiles img {
+  border-radius: 50%;
+  width: 150px; 
+  height: auto; 
+  background-color: #a52a2a; 
+  padding: 10px;
+  box-shadow: 5px -5px #000;
+}
+.speaker-info {
+  margin-top: 10px;
+}
+.speaker-name,
+.speaker-title {
+  margin: 5px;
+  color: darkgoldenrod;
+}
+.view-all-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px solid white;
+}
